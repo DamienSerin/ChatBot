@@ -1,5 +1,5 @@
 var SlackBot = require('slackbots');
-
+var axios = require('axios');
 module.exports = function(params) {
 	this.bot = null;
 	var self = this;
