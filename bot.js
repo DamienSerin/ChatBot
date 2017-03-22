@@ -59,10 +59,12 @@ module.exports = function(params) {
 		};
 
 		axios.get('http://www.chucknorrisfacts.fr/api/get?data=tri:alea;nb:1').then(function(response){
+			var json=response.data;
+			self.bot.postMessageToChannel('general', json.fact);
 			console.log(response.data);
 			console.log(response.status);
 		});
 
 
-	},100);
+	},2000);
 }
