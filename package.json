@@ -1,0 +1,25 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienSerin/ChatBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamienSerin/ChatBot/issues"
+  },
+  "homepage": "https://github.com/DamienSerin/ChatBot#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "mocha": "^3.2.0",
+    "slackbots": "^1.0.2"
+  }
+}
