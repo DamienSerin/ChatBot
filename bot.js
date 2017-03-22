@@ -60,7 +60,7 @@ module.exports = function(params) {
 
 		axios.get('http://www.chucknorrisfacts.fr/api/get?data=tri:alea;nb:1').then(function(response){
 			var json=response.data;
-			self.bot.postMessageToChannel('general', json.fact, params);
+			self.bot.postMessageToChannel('general', json[0].fact, params);
 			console.log(response.data);
 			console.log(response.status);
 		});
