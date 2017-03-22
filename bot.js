@@ -9,7 +9,7 @@ module.exports = function(params) {
 		self.bot.on('message', self.onEvent);
 	}
 
-	self.onSart = function(){
+	self.onStart = function(){
 		var params = {};
 
 
